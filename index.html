@@ -21,10 +21,10 @@
         }
         h1.animal-name { 
             position: absolute;
-            left: 15%;
-            top: 5%;
-            color: #007a55;
-            font-size: 6rem; /* Relative to baseline font size */
+            left: 12rem;
+            top: 3rem;
+            color: #009966;
+            font-size: 5rem; /* Relative to baseline font size */
             margin: 0;
             padding: 0;
         }
@@ -46,14 +46,14 @@
             margin: 0;
             padding: 0;
         }
-        .animal-container {
+        .animal-container, .animal-container > * {
             position: absolute;
-            width: 65rem; /* Adjust width as needed */
-            height: 55rem; /* Adjust height as needed */
-            border: 1px solid #000; /* Optional: for visualization */
         }
-        .animal-container > * {
-            position: absolute;
+        .a {
+            left: 30rem;
+            top: 6rem;
+            font-size: 22rem;
+            color: #f54a00;
         }
     </style>
 </head>
@@ -63,7 +63,7 @@
 <div class="black-background"></div>
 <h2 class="animal-letter">A</h2>
 <div class="animal-container">
-    <!-- Centered content goes here -->
+     <div class="a">a</div>
 </div>
 
 </body>
