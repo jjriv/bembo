@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <title>Edward&rsquo;s Zoo</title>
+     
+    <style type="text/css">
+        * {
+            font-family: "Cardo", Georgia, serif;
+            font-weight: normal;
+            font-size: 1vw; 
+        }
+        body {
+            background-color: #ffedd4;
+        }
+        h1.animal-name { 
+            position: absolute;
+            left: 15%;
+            top: 5%;
+            color: #007a55;
+            font-size: 6rem; /* Relative to baseline font size */
+            margin: 0;
+            padding: 0;
+        }
+        .black-background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 23.85rem;
+            height: 100%;
+            background-color: black;
+            z-index: -1; /* Ensure it is behind other content */
+        }
+        h2.animal-letter {
+            position: absolute;
+            right: 1rem;
+            top: -15rem;
+            color: #f54a00;
+            font-size: 60rem; /* Relative to baseline font size */
+            margin: 0;
+            padding: 0;
+        }
+        .animal-container {
+            position: absolute;
+            width: 65rem; /* Adjust width as needed */
+            height: 55rem; /* Adjust height as needed */
+            border: 1px solid #000; /* Optional: for visualization */
+        }
+        .animal-container > * {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="animal-name">Antelope</h1>
+<div class="black-background"></div>
+<h2 class="animal-letter">A</h2>
+<div class="animal-container">
+    <!-- Centered content goes here -->
+</div>
+
+</body>
+</html>
