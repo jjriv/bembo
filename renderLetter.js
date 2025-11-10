@@ -11,21 +11,27 @@ function renderLetter(letter) {
     const animalName = document.createElement('h1');
     animalName.className = 'animal-name';
     animalName.textContent = data.animalName.text;
-    animalName.style.left = data.animalName.left;
-    animalName.style.top = data.animalName.top;
+    if (data.animalName.left) animalName.style.left = data.animalName.left;
+    if (data.animalName.right) animalName.style.right = data.animalName.right;
+    if (data.animalName.top) animalName.style.top = data.animalName.top;
+    if (data.animalName.bottom) animalName.style.bottom = data.animalName.bottom;
     animalName.style.color = data.animalName.color;
     animalName.style.fontSize = data.animalName.fontSize;
     document.body.appendChild(animalName);
     
-    // Create animal letter h2
-    const animalLetter = document.createElement('h2');
-    animalLetter.className = 'animal-letter';
-    animalLetter.textContent = data.animalLetter.text;
-    animalLetter.style.right = data.animalLetter.right;
-    animalLetter.style.top = data.animalLetter.top;
-    animalLetter.style.color = data.animalLetter.color;
-    animalLetter.style.fontSize = data.animalLetter.fontSize;
-    document.body.appendChild(animalLetter);
+    // Create animal letter h2 (if defined)
+    if (data.animalLetter) {
+        const animalLetter = document.createElement('h2');
+        animalLetter.className = 'animal-letter';
+        animalLetter.textContent = data.animalLetter.text;
+        if (data.animalLetter.left) animalLetter.style.left = data.animalLetter.left;
+        if (data.animalLetter.right) animalLetter.style.right = data.animalLetter.right;
+        if (data.animalLetter.top) animalLetter.style.top = data.animalLetter.top;
+        if (data.animalLetter.bottom) animalLetter.style.bottom = data.animalLetter.bottom;
+        animalLetter.style.color = data.animalLetter.color;
+        animalLetter.style.fontSize = data.animalLetter.fontSize;
+        document.body.appendChild(animalLetter);
+    }
     
     // Create additional div if defined
     if (data.additionalDiv) {
