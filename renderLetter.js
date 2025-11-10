@@ -76,7 +76,14 @@ function renderLetter(letter) {
 window.addEventListener('DOMContentLoaded', function() {
     // Get the letter from the URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
-    const letter = urlParams.get('letter') || 'a'; // Default to 'a' if no letter specified
-    
-    renderLetter(letter);
+    const letter = urlParams.get('letter');
+    if(letter) {
+        //hide the #title-page div
+        const titlePage = document.getElementById('title-page');
+        if(titlePage) {
+            titlePage.style.display = 'none';
+        }
+        //render the page for the given letter
+        renderLetter(letter);
+    } 
 });
