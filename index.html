@@ -24,62 +24,34 @@
         body {
             background-color: var(--background-color);
         }
+        
+        /* Base styles for dynamically created elements */
         h1.animal-name { 
             position: absolute;
-            left: 12rem;
-            top: 3rem;
-            color: var(--teal);
-            font-size: 5rem; 
             margin: 0;
             padding: 0;
         }
-        .black-background {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 23.85rem;
-            height: 100%;
-            background-color: var(--black);
-            z-index: -1; 
-        }
         h2.animal-letter {
             position: absolute;
-            right: 1rem;
-            top: -15rem;
-            color: var(--orange);
-            font-size: 60rem; 
             margin: 0;
             padding: 0;
         }
         .animal-container {
-            --scale: 1;
-            left: 0rem;
-            top: 0rem;
-         }
-        .animal-container, .animal-container > * {
             position: absolute;
         }
-        .a {
-            left: calc(29.5rem * var(--scale));
-            top: calc(4.5rem * var(--scale));
-            font-size: calc(24rem * var(--scale));
-            color: var(--orange);
+        .animal-container > * {
+            position: absolute;
         }
-        .o {
-            left: calc(24rem * var(--scale));
-            top: calc(8rem * var(--scale));
-            font-size: calc(24rem * var(--scale));
-            color: var(--black);
+        .partial-background {
+            position: absolute;
         }
     </style>
 </head>
 <body>
-<h1 class="animal-name">Antelope</h1>
-<div class="black-background"></div>
-<h2 class="animal-letter">A</h2>
-<div class="animal-container">
-     <div class="a">a</div>
-     <div class="o">O</div>
-</div>
+
+<!-- Link to separate JavaScript files -->
+<script src="letters.js"></script>
+<script src="renderLetter.js"></script>
+
 </body>
 </html>
