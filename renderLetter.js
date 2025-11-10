@@ -74,5 +74,9 @@ function renderLetter(letter) {
 
 // Run on page load
 window.addEventListener('DOMContentLoaded', function() {
-    renderLetter('a'); // Change this letter to render different animals
+    // Get the letter from the URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const letter = urlParams.get('letter') || 'a'; // Default to 'a' if no letter specified
+    
+    renderLetter(letter);
 });
