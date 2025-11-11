@@ -1,8 +1,8 @@
 /* create variables for each color used in the design */
 :root {
-    --yellow: #ffedd4;
-    --teal: #009966;
-    --orange: #f54a00;
+    --yellow: #ffe9c7;
+    --teal: #008d7d;
+    --orange: #f56000;
     --black: #111111;
 }
 * {
