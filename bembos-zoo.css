@@ -38,15 +38,41 @@ h2.animal-letter {
 /* title page css */
 #title-page {
 }
+.tp-abc-book-a, .tp-abc-book-b {
+    position: absolute;
+    top: 5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: .9rem;
+}
+    .tp-abc-book-a {
+        left: 27rem;
+    }
+    .tp-abc-book-b {
+        left: 60rem;
+    }
 .tp-bembo {
-    font-size: 8rem;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    font-size: 27rem;
+    text-align: center;
     color: var(--orange);
     margin: 0;
     padding: 0;
+    letter-spacing: -1rem;
 }
 .tp-zoo {
-    font-size: 12rem;
+    position: absolute;
+    text-align: center;
+    top: 18rem;
+    left: 0;
+    right: 0;
+    font-size: 40rem;
     color: var(--orange);
     margin: 0;
     padding: 0;
+    letter-spacing: -1rem;
 }
