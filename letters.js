@@ -20,6 +20,7 @@ const letterData = {
             left: "0rem",
             top: "0rem"
         },
+        backgroundColor: "var(--yellow)",
         additionalDiv: {
             top: "0",
             right: "0",

@@ -7,6 +7,9 @@ function renderLetter(letter) {
         return;
     }
     
+    // Set page background color 
+    document.body.style.backgroundColor = data.backgroundColor;
+    
     // Create animal name h1
     const animalName = document.createElement('h1');
     animalName.className = 'animal-name';
