@@ -10,6 +10,9 @@
     font-weight: normal;
     font-size: 1vw; 
 }
+body {
+    background-color: var(--yellow)
+}
 
 /* Base styles for dynamically created elements */
 h1.animal-name { 

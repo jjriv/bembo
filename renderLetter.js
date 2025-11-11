@@ -1,4 +1,28 @@
 // renderLetter.js - Function to render letter elements
+// Ensures a global letterData map exists for letter script files to populate
+window.letterData = window.letterData || {};
+
+// Dynamically load a letter definition script like letters/a.js
+function loadLetterConfig(letter) {
+    return new Promise((resolve, reject) => {
+        const l = (letter || '').toLowerCase();
+        if (!l.match(/^[a-z]$/)) {
+            reject(new Error(`Invalid letter: ${letter}`));
+            return;
+        }
+        // If it's already loaded, resolve immediately
+        if (window.letterData && window.letterData[l]) {
+            resolve();
+            return;
+        }
+        const script = document.createElement('script');
+        script.src = `letters/${l}.js`;
+        script.async = true;
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error(`Failed to load config: ${script.src}`));
+        document.head.appendChild(script);
+    });
+}
 function renderLetter(letter) {
     const data = letterData[letter.toLowerCase()];
     
@@ -80,13 +104,16 @@ window.addEventListener('DOMContentLoaded', function() {
     // Get the letter from the URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const letter = urlParams.get('letter');
-    if(letter) {
-        //hide the #title-page div
-        const titlePage = document.getElementById('title-page');
-        if(titlePage) {
-            titlePage.style.display = 'none';
-        }
-        //render the page for the given letter
-        renderLetter(letter);
-    } 
+    if (letter) {
+        loadLetterConfig(letter)
+            .then(() => {
+                // Hide the title page only after successful load
+                const titlePage = document.getElementById('title-page');
+                if (titlePage) titlePage.style.display = 'none';
+                renderLetter(letter);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+    }
 });
