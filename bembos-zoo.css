@@ -8,12 +8,14 @@
 * {
     font-family: "Cardo", Georgia, serif;
     font-weight: normal;
-    font-size: 1vw; 
+    font-size: 1vmin;
+    line-height: 1;
     margin: 0;
     padding: 0;
+
 }
 body {
-    background-color: var(--yellow)
+    background-color: var(--yellow);
 }
 
 /* Base styles for dynamically created elements */
@@ -35,24 +37,34 @@ h2.animal-letter {
 
 /* title page css */
 #title-page {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+
+}
+.tp-abc-book {
+    position: absolute;
+    left: 50%;
+    top: 5.5rem;
 }
 .tp-abc-book-a, .tp-abc-book-b {
     position: absolute;
-    top: 7.5rem;
     color: var(--black);
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: .9rem;
+    top: 0;
+    white-space: nowrap;
 }
     .tp-abc-book-a {
-        left: 28.5rem;
+        left: -22rem;
     }
     .tp-abc-book-b {
-        left: 60rem;
+        left: 10.5rem;
     }
 .tp-bembo {
     position: absolute;
-    top: -2rem;
+    top: 0;
     left: 0;
     right: 0;
     font-size: 27rem;
@@ -63,7 +75,7 @@ h2.animal-letter {
 .tp-zoo {
     position: absolute;
     text-align: center;
-    top: 18rem;
+    top: 21rem;
     left: 0;
     right: 0;
     font-size: 40rem;
@@ -72,64 +84,64 @@ h2.animal-letter {
 }
 .tp-author {
     position: absolute;
-    text-align: right;
-    top: 59rem;
-    right: 4rem;
+    top: 55rem;
+    left: 50%;
+    margin-left: 7rem;
     font-size: 3.1rem;
     color: var(--teal);
 }
 .tp-ears {
     position: absolute;
     top: 20rem;
-    left: 28rem;
+    left: 50%;
     font-size: 20rem;
     color: var(--black);
     z-index: -1;
 }
     .tp-ear-left {
         position: absolute;
-        left: 0;
+        left: -22rem;
         font-size: inherit
     }
     .tp-ear-right {
         position: absolute;
-        left: 29rem;
+        left: 8rem;
         font-size: inherit;
         transform: scaleX(-1);
     }
 .tp-mouth {
     position: absolute;
-    top: 24rem;
-    left: 34rem;
+    top: 27rem;
+    left: 50%;
     font-size: 42rem;
     color: var(--black);
 }
     .tp-mouth-left {
         position: absolute;
-        left: 0;
+        left: -15.5rem;
         font-size: inherit;
         transform: rotate(-45deg);
     }
     .tp-mouth-right {
         position: absolute;
-        left: 7.15rem;
+        left: -8.5rem;
         font-size: inherit;
         transform: scaleX(-1) rotate(-45deg);
     }
 .tp-eyes {
     position: absolute;
-    top: 33.5rem;
-    left: 39.5rem;
+    top: 31rem;
+    left: 50%;
     font-size: 8rem;
     color: var(--black);
 }
     .tp-eye-left {
         position: absolute;
-        left: 0;
+        left: -10rem;
         font-size: inherit;
     }
     .tp-eye-right {
         position: absolute;
-        left: 12rem;
+        left: 2rem;
         font-size: inherit;
     }
