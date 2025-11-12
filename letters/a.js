@@ -4,14 +4,14 @@ window.letterData.a = {
     animalName: {
         text: "Antelope",
         left: "12rem",
-        top: "3rem",
+        top: "5rem",
         color: "var(--teal)",
         fontSize: "5rem"
     },
     animalLetter: {
         text: "A",
         right: "1rem",
-        top: "-15rem",
+        top: "0",
         color: "var(--orange)",
         fontSize: "60rem"
     },
@@ -33,14 +33,14 @@ window.letterData.a = {
         {
             text: "a",
             left: "29.5rem",
-            top: "4.5rem",
+            top: "14.5rem",
             fontSize: "24rem",
             color: "var(--orange)"
         },
         {
             text: "O",
             left: "24rem",
-            top: "8rem",
+            top: "18rem",
             fontSize: "24rem",
             color: "var(--black)"
         }
