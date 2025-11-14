@@ -4,27 +4,27 @@ window.letterData.a = {
     animalName: {
         text: "Antelope",
         left: "12rem",
-        top: "5rem",
+        top: "7rem",
         color: "var(--teal)",
         fontSize: "5rem"
     },
     animalLetter: {
         text: "A",
         right: "1rem",
-        top: "0",
+        top: "-5rem",
         color: "var(--orange)",
-        fontSize: "60rem"
+        fontSize: "70rem"
     },
     animalContainer: {
         scale: 1,
-        left: "0rem",
+        left: "2rem",
         top: "0rem"
     },
     backgroundColor: "var(--yellow)",
     additionalDiv: {
         top: "0",
         right: "0",
-        width: "23.85rem",
+        width: "27.7rem",
         height: "100%",
         backgroundColor: "var(--black)",
         zIndex: "-1"
@@ -32,16 +32,16 @@ window.letterData.a = {
     letters: [
         {
             text: "a",
-            left: "29.5rem",
-            top: "14.5rem",
-            fontSize: "24rem",
+            left: "28rem",
+            top: "14rem",
+            fontSize: "26rem",
             color: "var(--orange)"
         },
         {
             text: "O",
-            left: "24rem",
+            left: "22.35rem",
             top: "18rem",
-            fontSize: "24rem",
+            fontSize: "25.5rem",
             color: "var(--black)"
         },
         {
@@ -60,9 +60,9 @@ window.letterData.a = {
         },
         {
             text: "l",
-            left: "45.25rem",
-            top: "27rem",
-            fontSize: "23rem",
+            left: "45.7rem",
+            top: "27.2rem",
+            fontSize: "22rem",
             scalex: "-1",
             rotate: "-153deg",
             color: "var(--black)"
@@ -97,6 +97,47 @@ window.letterData.a = {
             top: "11.25rem",
             fontSize: "5rem",
             color: "var(--teal)"
+        },
+        {
+            text: "p",
+            left: "14.8rem",
+            top: "21.2rem",
+            fontSize: "22rem",
+            rotate: "27deg",
+            color: "var(--black)"
+        },
+        {
+            text: "l",
+            left: "6rem",
+            top: "37.6rem",
+            fontSize: "22rem",
+            rotate: "-153deg",
+            scalex: "-1",
+            color: "var(--black)"
+        },
+        {
+            text: "e",
+            left: "20.5rem",
+            top: "23rem",
+            fontSize: "10rem",
+            rotate: "90deg",
+            color: "var(--black)"
+        },
+        {
+            text: "n",
+            left: "16rem",
+            top: "26.75rem",
+            fontSize: "12rem",
+            color: "var(--black)"
+        },
+        {
+            text: "t",
+            left: "12.75rem",
+            top: "20.5rem",
+            fontSize: "17rem",
+            rotate: "90deg",
+            scalex: "-1",
+            color: "var(--black)"
         }
 
 
