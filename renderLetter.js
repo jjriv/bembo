@@ -93,6 +93,12 @@ function renderLetter(letter) {
         letterDiv.style.top = `calc(${letterConfig.top} * var(--scale))`;
         letterDiv.style.fontSize = `calc(${letterConfig.fontSize} * var(--scale))`;
         letterDiv.style.color = letterConfig.color;
+        if (letterConfig.rotate) {
+            letterDiv.style.transform = `rotate(${letterConfig.rotate})`;
+        }
+        if (letterConfig.scalex) {
+            letterDiv.style.transform += ` scaleX(${letterConfig.scalex})`;
+        }
         container.appendChild(letterDiv);
     });
     

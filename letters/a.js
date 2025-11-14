@@ -43,6 +43,29 @@ window.letterData.a = {
             top: "18rem",
             fontSize: "24rem",
             color: "var(--black)"
-        }
+        },
+        {
+            text: "T",
+            left: "35.5rem",
+            top: "14.5rem",
+            fontSize: "23rem",
+            color: "var(--black)"
+        },
+        {
+            text: "L",
+            left: "39.75rem",
+            top: "14.5rem",
+            fontSize: "23rem",
+            color: "var(--black)"
+        },
+        {
+            text: "l",
+            left: "45.25rem",
+            top: "27rem",
+            fontSize: "23rem",
+            scalex: "-1",
+            rotate: "-153deg",
+            color: "var(--black)"
+        },
     ]
 };
