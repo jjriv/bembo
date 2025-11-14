@@ -67,5 +67,38 @@ window.letterData.a = {
             rotate: "-153deg",
             color: "var(--black)"
         },
+        {
+            text: "A",
+            left: "45.5rem",
+            top: "7.8rem",
+            fontSize: "16rem",
+            rotate: "110deg",
+            color: "var(--black)"
+        },
+        {
+            text: "P",
+            left: "38.75rem",
+            top: "8.25rem",
+            fontSize: "10.5rem",
+            rotate: "180deg",
+            color: "var(--black)"
+        },
+        {
+            text: "e",
+            left: "42rem",
+            top: "3.2rem",
+            fontSize: "16rem",
+            rotate: "180deg",
+            color: "var(--black)"
+        },
+        {
+            text: "•",
+            left: "48rem",
+            top: "11.25rem",
+            fontSize: "5rem",
+            color: "var(--teal)"
+        }
+
+
     ]
 };
