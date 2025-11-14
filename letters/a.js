@@ -3,28 +3,28 @@ window.letterData = window.letterData || {};
 window.letterData.a = {
     animalName: {
         text: "Antelope",
-        left: "12rem",
-        top: "7rem",
+        left: "13rem",
+        top: "7.5rem",
         color: "var(--teal)",
-        fontSize: "5rem"
+        fontSize: "7rem"
     },
     animalLetter: {
         text: "A",
-        right: "1rem",
+        left: "65rem",
         top: "-5rem",
         color: "var(--orange)",
-        fontSize: "70rem"
+        fontSize: "88rem"
     },
     animalContainer: {
-        scale: 1,
+        scale: 1.25,
         left: "2rem",
         top: "0rem"
     },
     backgroundColor: "var(--yellow)",
     additionalDiv: {
         top: "0",
-        right: "0",
-        width: "27.7rem",
+        left: "94rem",
+        width: "calc(100% - 94rem)",
         height: "100%",
         backgroundColor: "var(--black)",
         zIndex: "-1"
