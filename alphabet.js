@@ -1,0 +1,30 @@
+// alphabet.js - a list of letters and their animals
+const alphabet = {
+    //list all the letters of the alpabet with their corresponding animal name
+    a: "Antelope",
+    b: "Bison",
+    c: "Crab",
+    d: "Dragon",
+    e: "Elephant",
+    f: "Flamingo",
+    g: "Giraffe",
+    h: "Hippopotamus",
+    i: "Ibis/Iguana",
+    j: "Jaguar",
+    k: "Koala",
+    l: "Lobster/Lion",
+    m: "Monkey",
+    n: "Narhwal/Newt",
+    o: "Owl/Octopus",
+    p: "Peacock/Pig",
+    q: "Quail",
+    r: "Rhinoceros",
+    s: "Salmon/Scallop",
+    t: "Turtle",
+    u: "Unicorn",
+    v: "Viper",
+    w: "Wolf",
+    x: "X/Ray Wolf",
+    y: "Yak",
+    z: "Zebra"
+};

@@ -4,6 +4,7 @@
     --teal: #008d7d;
     --orange: #f56000;
     --black: #111111;
+    --title-page-scale: 1;
 }
 * {
     font-family: "Cardo", Georgia, serif;
@@ -40,35 +41,35 @@ h2.animal-letter {
 #title-page {
     position: absolute;
     top: 4rem;
-    width: 100%;
-
+    left: 0;
+    right: 0;
 }
 .tp-abc-book {
     position: absolute;
     left: 50%;
-    top: 5.5rem;
+    top: calc(5.5rem * var(--title-page-scale));
 }
 .tp-abc-book-a, .tp-abc-book-b {
     position: absolute;
     color: var(--black);
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: calc(3rem * var(--title-page-scale));
     letter-spacing: .9rem;
     top: 0;
     white-space: nowrap;
 }
     .tp-abc-book-a {
-        left: -22rem;
+        left: calc(-22rem * var(--title-page-scale));
     }
     .tp-abc-book-b {
-        left: 10.5rem;
+        left: calc(10.5rem * var(--title-page-scale));
     }
 .tp-bembo {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    font-size: 27rem;
+    font-size: calc(27rem * var(--title-page-scale));
     text-align: center;
     color: var(--orange);
     letter-spacing: -1rem;
@@ -76,73 +77,73 @@ h2.animal-letter {
 .tp-zoo {
     position: absolute;
     text-align: center;
-    top: 21rem;
+    top: calc(21rem * var(--title-page-scale));
     left: 0;
     right: 0;
-    font-size: 40rem;
+    font-size: calc(40rem * var(--title-page-scale));
     color: var(--orange);
     letter-spacing: -1rem;
 }
 .tp-author {
     position: absolute;
-    top: 55rem;
+    top: calc(55rem * var(--title-page-scale));
     left: 50%;
-    margin-left: 7rem;
-    font-size: 3.1rem;
+    margin-left: calc(7rem * var(--title-page-scale));
+    font-size: calc(3.1rem * var(--title-page-scale));
     color: var(--teal);
 }
 .tp-ears {
     position: absolute;
-    top: 20rem;
+    top: calc(20rem * var(--title-page-scale));
     left: 50%;
-    font-size: 20rem;
+    font-size: calc(20rem * var(--title-page-scale));
     color: var(--black);
     z-index: -1;
 }
     .tp-ear-left {
         position: absolute;
-        left: -22rem;
+        left: calc(-22rem * var(--title-page-scale));
         font-size: inherit
     }
     .tp-ear-right {
         position: absolute;
-        left: 8rem;
+        left: calc(8rem * var(--title-page-scale));
         font-size: inherit;
         transform: scaleX(-1);
     }
 .tp-mouth {
     position: absolute;
-    top: 27rem;
+    top: calc(27rem * var(--title-page-scale));
     left: 50%;
-    font-size: 42rem;
+    font-size: calc(42rem * var(--title-page-scale));
     color: var(--black);
 }
     .tp-mouth-left {
         position: absolute;
-        left: -15.5rem;
+        left: calc(-15.5rem * var(--title-page-scale));
         font-size: inherit;
         transform: rotate(-45deg);
     }
     .tp-mouth-right {
         position: absolute;
-        left: -8.5rem;
+        left: calc(-8.5rem * var(--title-page-scale));
         font-size: inherit;
         transform: scaleX(-1) rotate(-45deg);
     }
 .tp-eyes {
     position: absolute;
-    top: 31rem;
+    top: calc(31rem * var(--title-page-scale));
     left: 50%;
-    font-size: 8rem;
+    font-size: calc(8rem * var(--title-page-scale));
     color: var(--black);
 }
     .tp-eye-left {
         position: absolute;
-        left: -10rem;
+        left: calc(-10rem * var(--title-page-scale));
         font-size: inherit;
     }
     .tp-eye-right {
         position: absolute;
-        left: 2rem;
+        left: calc(2rem * var(--title-page-scale));
         font-size: inherit;
     }
