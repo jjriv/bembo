@@ -134,9 +134,10 @@ body {
 /* animal page css */
 #animal-page {
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
+    margin: auto;
+    width: 117rem;
 }
 
 /* Base styles for dynamically created elements */
@@ -146,10 +147,10 @@ h1.animal-name {
 h2.animal-letter {
     position: absolute;
 }
-.animal-container {
+#animal-container {
     position: absolute;
 }
-.animal-container > * {
+#animal-container > * {
     position: absolute;
 }
 .partial-background {

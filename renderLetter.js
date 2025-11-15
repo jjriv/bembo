@@ -65,7 +65,7 @@ function renderLetter(letter) {
     
     // Create animal container
     const container = document.createElement('div');
-    container.className = 'animal-container';
+    container.id = 'animal-container';
     container.style.setProperty('--scale', data.animalContainer.scale);
     container.style.left = data.animalContainer.left;
     container.style.top = data.animalContainer.top;
