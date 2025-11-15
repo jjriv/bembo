@@ -38,54 +38,54 @@ window.letterData.a = {
         },
         {
             text: "T",
-            left: "35.5rem",
+            left: "34.6rem",
             top: "14.5rem",
-            fontSize: "23rem",
+            fontSize: "25rem",
             color: "var(--black)"
         },
         {
             text: "L",
-            left: "39.75rem",
+            left: "39.1rem",
             top: "14.5rem",
-            fontSize: "23rem",
+            fontSize: "25rem",
             color: "var(--black)"
         },
         {
             text: "l",
-            left: "45.7rem",
-            top: "27.2rem",
+            left: "45.8rem",
+            top: "29rem",
             fontSize: "22rem",
             scalex: "-1",
-            rotate: "-153deg",
+            rotate: "-154deg",
             color: "var(--black)"
         },
         {
             text: "A",
             left: "45.5rem",
-            top: "7.8rem",
-            fontSize: "16rem",
+            top: "6.9rem",
+            fontSize: "18rem",
             rotate: "110deg",
             color: "var(--black)"
         },
         {
             text: "P",
-            left: "38.75rem",
-            top: "8.25rem",
-            fontSize: "10.5rem",
+            left: "38.1rem",
+            top: "7.3rem",
+            fontSize: "12rem",
             rotate: "180deg",
             color: "var(--black)"
         },
         {
             text: "e",
-            left: "42rem",
-            top: "3.2rem",
-            fontSize: "16rem",
+            left: "42.2rem",
+            top: "1.52rem",
+            fontSize: "18rem",
             rotate: "180deg",
             color: "var(--black)"
         },
         {
             text: "•",
-            left: "48rem",
+            left: "48.5rem",
             top: "11.25rem",
             fontSize: "5rem",
             color: "var(--teal)"
@@ -95,7 +95,7 @@ window.letterData.a = {
             left: "14.8rem",
             top: "21.2rem",
             fontSize: "22rem",
-            rotate: "27deg",
+            rotate: "26deg",
             color: "var(--black)"
         },
         {
@@ -103,7 +103,7 @@ window.letterData.a = {
             left: "6rem",
             top: "37.6rem",
             fontSize: "22rem",
-            rotate: "-153deg",
+            rotate: "-154deg",
             scalex: "-1",
             color: "var(--black)"
         },
