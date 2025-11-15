@@ -21,14 +21,6 @@ window.letterData.a = {
         top: "0rem"
     },
     backgroundColor: "var(--yellow)",
-    additionalDiv: {
-        top: "0",
-        left: "94rem",
-        width: "calc(100% - 94rem)",
-        height: "100%",
-        backgroundColor: "var(--black)",
-        zIndex: "-1"
-    },
     letters: [
         {
             text: "a",

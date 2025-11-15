@@ -31,6 +31,9 @@ function renderLetter(letter) {
         return;
     }
     
+    // get the animal-page div
+    const animalPage = document.getElementById('animal-page');
+
     // Set page background color 
     document.body.style.backgroundColor = data.backgroundColor;
     
@@ -44,7 +47,7 @@ function renderLetter(letter) {
     if (data.animalName.bottom) animalName.style.bottom = data.animalName.bottom;
     animalName.style.color = data.animalName.color;
     animalName.style.fontSize = data.animalName.fontSize;
-    document.body.appendChild(animalName);
+    animalPage.appendChild(animalName);
     
     // Create animal letter h2 (if defined)
     if (data.animalLetter) {
@@ -57,25 +60,7 @@ function renderLetter(letter) {
         if (data.animalLetter.bottom) animalLetter.style.bottom = data.animalLetter.bottom;
         animalLetter.style.color = data.animalLetter.color;
         animalLetter.style.fontSize = data.animalLetter.fontSize;
-        document.body.appendChild(animalLetter);
-    }
-    
-    // Create additional div if defined
-    if (data.additionalDiv) {
-        const div = document.createElement('div');
-        div.className = 'partial-background';
-        
-        // Apply all style properties from the config
-        if (data.additionalDiv.top) div.style.top = data.additionalDiv.top;
-        if (data.additionalDiv.right) div.style.right = data.additionalDiv.right;
-        if (data.additionalDiv.left) div.style.left = data.additionalDiv.left;
-        if (data.additionalDiv.bottom) div.style.bottom = data.additionalDiv.bottom;
-        if (data.additionalDiv.width) div.style.width = data.additionalDiv.width;
-        if (data.additionalDiv.height) div.style.height = data.additionalDiv.height;
-        if (data.additionalDiv.backgroundColor) div.style.backgroundColor = data.additionalDiv.backgroundColor;
-        if (data.additionalDiv.zIndex) div.style.zIndex = data.additionalDiv.zIndex;
-        
-        document.body.appendChild(div);
+        animalPage.appendChild(animalLetter);
     }
     
     // Create animal container
@@ -102,7 +87,7 @@ function renderLetter(letter) {
         container.appendChild(letterDiv);
     });
     
-    document.body.appendChild(container);
+    animalPage.appendChild(container);
 }
 
 // Run on page load

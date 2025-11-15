@@ -33,7 +33,6 @@ const alphabet = {
 //append these divs to the alphabet div in index.html
 function createAlphabetDisplay() {
     const alphabetDiv = document.getElementById('alphabet');
-    console.log(alphabetDiv);
     for (const [letter, animal] of Object.entries(alphabet)) {
         const div = document.createElement('div');
         div.className = 'letter-animal';

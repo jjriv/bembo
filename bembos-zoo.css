@@ -20,23 +20,6 @@ body {
     background-color: var(--yellow);
 }
 
-/* Base styles for dynamically created elements */
-h1.animal-name { 
-    position: absolute;
-}
-h2.animal-letter {
-    position: absolute;
-}
-.animal-container {
-    position: absolute;
-}
-.animal-container > * {
-    position: absolute;
-}
-.partial-background {
-    position: absolute;
-}
-
 /* title page css */
 #title-page {
     position: absolute;
@@ -147,6 +130,32 @@ h2.animal-letter {
         left: calc(2rem * var(--title-page-scale));
         font-size: inherit;
     }
+
+/* animal page css */
+#animal-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Base styles for dynamically created elements */
+h1.animal-name { 
+    position: absolute;
+}
+h2.animal-letter {
+    position: absolute;
+}
+.animal-container {
+    position: absolute;
+}
+.animal-container > * {
+    position: absolute;
+}
+.partial-background {
+    position: absolute;
+}
+
 
 /* alphabet section */
 #alphabet {
