@@ -4,7 +4,7 @@
     --teal: #008d7d;
     --orange: #f56000;
     --black: #111111;
-    --title-page-scale: 1;
+    --title-page-scale: 1.2;
 }
 * {
     font-family: "Cardo", Georgia, serif;
@@ -147,3 +147,49 @@ h2.animal-letter {
         left: calc(2rem * var(--title-page-scale));
         font-size: inherit;
     }
+
+/* alphabet section */
+#alphabet {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    background-color: white;
+    width: calc(13 * 9rem); /* Forces exactly 13 divs per row */
+}
+#alphabet > div {
+    width: 9rem;
+    height: 9rem;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+#alphabet > div > h2 {
+    margin-top: .5rem;
+    font-size: 7rem;
+}
+#alphabet > div > h3 {
+    margin-top: -.75rem;
+    font-size: 1.25rem;
+}
+/* Odd divs: white background, black text */
+#alphabet > div:nth-child(odd) {
+    background-color: var(--yellow);
+    color: color-mix(in srgb, var(--orange) 60%, transparent);
+}
+#alphabet > div:nth-child(odd):hover {
+    color: var(--teal); /* 100% orange */
+    cursor: pointer;
+}
+/* Even divs: black background, white text */
+#alphabet > div:nth-child(even) {
+    background-color: color-mix(in srgb, var(--orange) 60%, transparent);
+    color: var(--yellow);
+}
+#alphabet > div:nth-child(even):hover {
+    background-color: var(--teal); /* 100% orange */
+    cursor: pointer;
+}

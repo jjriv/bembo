@@ -24,7 +24,32 @@ const alphabet = {
     u: "Unicorn",
     v: "Viper",
     w: "Wolf",
-    x: "X/Ray Wolf",
+    x: "X-ray Wolf",
     y: "Yak",
     z: "Zebra"
 };
+
+//loop through the alphabet and insert a div that contains the letter and animal name
+//append these divs to the alphabet div in index.html
+function createAlphabetDisplay() {
+    const alphabetDiv = document.getElementById('alphabet');
+    console.log(alphabetDiv);
+    for (const [letter, animal] of Object.entries(alphabet)) {
+        const div = document.createElement('div');
+        div.className = 'letter-animal';
+        div.innerHTML = `<h2 class="letter">${letter.toUpperCase()}</h2><h3 class="animal-name">${animal}</h3>`;
+        
+        // Add click event listener
+        div.addEventListener('click', () => {
+            window.location.href = `index.html?letter=${letter}`;
+        });
+        
+        alphabetDiv.appendChild(div);
+    }
+}
+
+// Call the function to create the display on page load
+// Run on page load
+window.addEventListener('DOMContentLoaded', function() {
+    createAlphabetDisplay();
+});
